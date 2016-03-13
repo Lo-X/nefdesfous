@@ -1,0 +1,87 @@
+
+$fa-font-path: "../../fonts";
+@import "font-awesome/font-awesome";
+
+body {
+  background: #ffffff;
+
+  font-size: 15px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #000;
+  line-height: 1.5em;
+}
+
+p, h1, h2, h3, h4, h5, h6, blockquote, ul, ol {
+  margin-bottom: 1.5em;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 1.325rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 1.125rem;
+}
+h5 {
+  font-size: 1rem;
+}
+h6 {
+  font-size: 1rem;
+}
+
+ul, ol {
+  margin-left: 20px;
+}
+
+ul {
+  list-style-type: disc;
+
+  ul {
+    list-style-type: circle;
+  }
+
+  ul, ol {
+    margin-bottom: 0;
+  }
+}
+
+ol {
+  list-style-type: decimal;
+
+  ol {
+    list-style-type: lower-roman;
+  }
+
+  ul, ol {
+    margin-bottom: 0;
+  }
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+blockquote {
+  margin: 40px;
+  border-left: 4px solid lighten(#000, 50%);
+  padding-left: 15px;
+  font-style: italic;
+
+  em {
+    display: block;
+    font-style: normal;
+
+    &:before {
+      content: "— ";
+    }
+  }
+}
