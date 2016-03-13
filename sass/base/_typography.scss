@@ -2,11 +2,13 @@
 $fa-font-path: "../../fonts";
 @import "font-awesome/font-awesome";
 
-body {
-  background: #ffffff;
+html {
+  font-size: $default-font-size;
+}
 
-  font-size: 15px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+body {
+  font-size: $default-font-size;
+  font-family: $default-font;
   color: #000;
   line-height: 1.5em;
 }

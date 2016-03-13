@@ -1,6 +1,17 @@
 $primary-color: #FF6600!default;
 $secondary-color: #FFFFFF!default;
 
+$facebook-color: #3b5998;
+$twitter-color: #55acee;
+$youtube-color: #bb0000;
+$rss-color: #ff6600;
+
+$default-font: "Helvetica Neue",Helvetica,Arial,sans-serif;
+$title-font: "Open Sans", sans-serif;
+$default-font-size: 15px;
+
+$transition-duration: 0.3s!default;
+
 // Extra small screen / phone
 //** Deprecated `$screen-xs` as of v3.0.1
 $screen-xs:                  480px !default;
