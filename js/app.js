@@ -21,9 +21,9 @@ jQuery(function($) {
 
         $(window).scroll(function() {
             if($(window).scrollTop() === 0) {
-                $('#return-to-top').fadeOut();
+                $('#return-to-top').stop().fadeOut();
             } else {
-                $('#return-to-top').fadeIn();
+                $('#return-to-top').stop().fadeIn();
             }
         });
     });
