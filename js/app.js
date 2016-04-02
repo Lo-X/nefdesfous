@@ -1,5 +1,10 @@
 jQuery(function($) {
     $(document).ready(function() {
+        $('.match-height').matchHeight({
+            byRow: true
+        });
+
+
         $('body').append('<a href="#" id="return-to-top" title="Retour en haut"><i class="fa fa-arrow-up"></i></a>');
         $('#return-to-top').on('click', function(event) {
             event.preventDefault();

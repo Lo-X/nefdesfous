@@ -20,7 +20,7 @@ module.exports = function(grunt) {
                 separator: ';',
             },
             dist: {
-                src: ['js/lib/*.min.js', 'js/*.js'],
+                src: ['js/lib/*.min.js', 'js/lib/jquery.matchHeight.js', 'js/*.js'],
                 dest: 'js/min/app.min.js'
             }
         },
