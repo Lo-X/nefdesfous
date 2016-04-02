@@ -20,7 +20,7 @@ module.exports = function(grunt) {
                 separator: ';',
             },
             dist: {
-                src: ['js/lib/bootstrap/bootstrap.min.js', 'js/*.js'],
+                src: ['js/lib/*.min.js', 'js/*.js'],
                 dest: 'js/min/app.min.js'
             }
         },
