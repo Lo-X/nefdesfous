@@ -1,5 +1,6 @@
 $primary-color: #FF6600!default;
 $secondary-color: #FFFFFF!default;
+$default-text-color: #000!default;
 
 $facebook-color: #3b5998;
 $twitter-color: #55acee;
@@ -11,6 +12,11 @@ $title-font: "Open Sans", sans-serif;
 $default-font-size: 15px;
 
 $transition-duration: 0.3s!default;
+
+// Media queries sizes
+$max-mobile: 768px;
+$max-tablet: 992px;
+$max-desktop: 1200px;
 
 // Extra small screen / phone
 //** Deprecated `$screen-xs` as of v3.0.1
