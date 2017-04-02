@@ -1,0 +1,29 @@
+
+section.schedule {
+  p {
+    text-align: center;
+  }
+}
+
+.schedule-table {
+  margin: 0 auto;
+  font-size: 1.1rem;
+
+  td {
+    padding: 5px 0;
+  }
+
+  &__day {
+    font-weight: bold;
+    padding-right: 10px!important;
+  }
+
+  &__schedule {
+    text-align: center;
+    color: $primary-color;
+
+    &.closed {
+      color: lighten($default-text-color, 50%);
+    }
+  }
+}

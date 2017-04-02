@@ -1,0 +1,11 @@
+@mixin parallelogram($color: $logo-green-color) {
+  display: inline-block;
+  width: 35px;
+  height: 30px;
+  color: rgba(0,0,0,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: $color;
+  -webkit-transform:    skewX(-20deg);
+  transform:    skewX(-20deg);
+}

@@ -1,0 +1,50 @@
+
+.section {
+  &__image {
+    height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    &.hero {
+      background-image: url('/img/photos/17310245.jpg');
+    }
+
+    &.menu {
+      background-image: url('/img/photos/17390451.jpg');
+    }
+
+    &.events {
+      background-image: url('/img/photos/17389179.jpg');
+
+    }
+  }
+
+  &__content {
+    padding: 20px 0;
+
+    &-title {
+      text-align: center;
+      font-size: 2.8rem;
+      padding: 10px 0;
+      margin-top: 2.5rem;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:before {
+        content: "";
+        @include parallelogram($logo-green-color);
+        margin-right: 15px;
+      }
+
+      &:after {
+        content: "";
+        @include parallelogram($logo-yellow-color);
+        margin-left: 15px;
+      }
+    }
+  }
+}

@@ -1,14 +1,20 @@
 @import "utils/variables";
 @import "utils/mixins/clearfix";
 @import "utils/mixins/grid";
+@import "utils/mixins/geometry";
 
 // SMACSS
 @import "base/reset";
 @import "base/base";
 @import "base/typography";
 
+@import "layout/grid";
+@import "layout/main";
+
 @import "module/return-to-top";
+@import "module/header";
+@import "module/sections";
+@import "module/schedule";
+@import "module/menu";
 //@import "module/slick/slick";
 //@import "module/slick/slick-theme";
-
-@import "layout/grid";

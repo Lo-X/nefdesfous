@@ -1,0 +1,84 @@
+
+.header {
+  position: fixed;
+  width: 100%;
+  min-height: 135px;
+  max-height: 180px;
+  z-index: 20;
+  background-color: rgba(255, 255, 255, 0.8);
+  overflow: hidden;
+
+  &__logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -115px;
+    width: 230px;
+  }
+
+  &__nav {
+    position: static;
+    padding: 85px 0 50px;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: #2e2e2e;
+
+    // For phones
+    @media (max-width: $max-tablet) {
+      display: none;
+    }
+
+    ul, li {
+      list-style-type: none;
+      display: inline-block;
+    }
+
+    li {
+      padding: 0 8px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      font-family: 'Open Sans', sans-serif;
+      padding: 10px 0;
+
+      &:after {
+        content: '';
+        display: block;
+        height: 2px;
+        position: relative;
+        bottom: -5px;
+        background: #2e2e2e;
+        width: 100%;
+        opacity: 0;
+        transition: opacity 0.5s;
+      }
+    }
+
+    a:hover, a:focus {
+      &:after {
+        opacity: 1;
+      }
+    }
+
+    &-left {
+      float: left;
+      text-align: left;
+    }
+
+    &-right {
+      float: right;
+      text-align: center;
+    }
+  }
+
+  // From tablets
+  @media (min-width: $max-tablet) {
+    text-align: center;
+  }
+
+  // For phones
+  @media (max-width: $max-tablet) {
+
+  }
+}

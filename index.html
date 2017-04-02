@@ -4,67 +4,226 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="copyright" content=" ">
+    <meta name="copyright" content="La Nef des Fous">
     <meta name="author" content="Loïc Boutter">
     <meta name="robots" content="all">
+    <meta name="description" content="La Nef des Fous - Bistro mais pas que ! Découvrez nos menus, les horaires et nos événements !">
 
-    <title>Integration</title>
+    <title>La Nef des Fous - Bistro mais pas que !</title>
 
     <link rel="stylesheet" media="all" href="/css/min/app.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Lobster" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
 
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 </head>
 <body>
+<a href="#main-nav" class="skip-link">Aller à la navigation</a>
+<a href="#content" class="skip-link">Aller au contenu</a>
 
-<h1><i class="fa fa-home"></i> Hello World</h1>
-<h2>Subtitle 1</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, consequatur cumque eligendi eum facilis id
-    impedit, nam neque nobis non quod repudiandae. Deleniti ducimus maiores placeat sequi,
-    <a href="#">un petit lien</a> similique sit voluptas!</p>
-<h3>Petit h3</h3>
-<p><img src="http://placehold.it/1280x100" alt=""/></p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores error laudantium magnam, molestias officia omnis sapiente similique unde. Accusantium culpa dicta dolorum, ducimus et eveniet illum necessitatibus quam vel veniam?</p>
+<header class="header">
+    <div class="container">
+        <h1 class="header__logo">
+            <a href="/">
+                <img src="img/logo-black.svg" alt="La Nef des Fous"/>
+            </a>
+        </h1>
+        <nav class="header__nav" id="main-nav">
+            <div class="header__nav-left">
+                <ul>
+                    <li><a href="#schedule">Horaires</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#evenements">Événements</a></li>
+                </ul>
+            </div>
+            <div class="header__nav-right">
+                <ul>
+                    <li><a href="#a-propos">Qui sommes-nous</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
 
+<main class="main" role="main" id="content" tabindex="-1">
+    <section class="section__image hero"></section>
 
-<ul>
-    <li>Elem 1</li>
-    <li>Elem 2</li>
-    <li>
-        Here is a sublist :
-        <ul>
-            <li>SubElem 1</li>
-            <li>SubElem 2</li>
-        </ul>
-    </li>
-    <li>
-        Here is an ordered sublist :
-        <ol>
-            <li>Element 1</li>
-            <li>
-                List of sub elements
-                <ol>
-                    <li>Sub Element 1</li>
-                    <li>Sub Element 2</li>
-                    <li>Sub Element 3</li>
-                </ol>
-            </li>
-        </ol>
-    </li>
-</ul>
+    <section class="section__content schedule" id="schedule">
+        <div class="container">
+            <h2 class="section__content-title">Horaires du bistro</h2>
+            <p>Nos fiéffés fous vous accueilleront derrière le zinc à ces heures :</p>
+            <table class="schedule-table">
+                <tr>
+                    <td class="schedule-table__day">Lundi</td>
+                    <td class="schedule-table__schedule">10h à 22h</td>
+                </tr>
+                <tr>
+                    <td class="schedule-table__day">Mardi</td>
+                    <td class="schedule-table__schedule">10h à 22h</td>
+                </tr>
+                <tr>
+                    <td class="schedule-table__day">Mercredi</td>
+                    <td class="schedule-table__schedule">10h à 22h</td>
+                </tr>
+                <tr>
+                    <td class="schedule-table__day">Jeudi</td>
+                    <td class="schedule-table__schedule closed"><em>fermé</em></td>
+                </tr>
+                <tr>
+                    <td class="schedule-table__day">Vendredi</td>
+                    <td class="schedule-table__schedule">10h à 1h</td>
+                </tr>
+                <tr>
+                    <td class="schedule-table__day">Samedi</td>
+                    <td class="schedule-table__schedule">10h à 1h</td>
+                </tr>
+                <tr>
+                    <td class="schedule-table__day">Dimanche</td>
+                    <td class="schedule-table__schedule">10h à 22h</td>
+                </tr>
+            </table>
 
-<blockquote>
-    La vie c'est comme une boite de chocolat, on ne sait jamais sur quoi on va tomber
-    <em>Forest Gump</em>
-</blockquote>
+            <h2 class="section__content-title">Horaires du resto</h2>
+            <p>Nos cuistots dingos quant-à eux vous concocteront des plats à ces services :</p>
+            <table class="schedule-table">
+                <tr>
+                    <td class="schedule-table__day">Lundi</td>
+                    <td class="schedule-table__schedule">midi</td>
+                </tr>
+                <tr>
+                    <td class="schedule-table__day">Mardi</td>
+                    <td class="schedule-table__schedule">midi</td>
+                </tr>
+                <tr>
+                    <td class="schedule-table__day">Mercredi</td>
+                    <td class="schedule-table__schedule">midi</td>
+                </tr>
+                <tr>
+                    <td class="schedule-table__day">Jeudi</td>
+                    <td class="schedule-table__schedule closed"><em>fermé</em></td>
+                </tr>
+                <tr>
+                    <td class="schedule-table__day">Vendredi</td>
+                    <td class="schedule-table__schedule">midi et soir*</td>
+                </tr>
+                <tr>
+                    <td class="schedule-table__day">Samedi</td>
+                    <td class="schedule-table__schedule">soir*</td>
+                </tr>
+                <tr>
+                    <td class="schedule-table__day">Dimanche</td>
+                    <td class="schedule-table__schedule">midi</td>
+                </tr>
+            </table>
+            <p>* Sauf exceptions les soirs de concerts ou autres événements.</p>
 
-<div class="row">
-    <div class="col-md-3 col-sm-6">col-md-3</div>
-    <div class="col-md-3 col-sm-6">col-md-3</div>
-    <div class="col-md-3 col-sm-6">col-md-3</div>
-    <div class="col-md-3 col-sm-6">col-md-3</div>
-</div>
+            <p>
+                Pour les petites faims, une petite restauration continue sera proposée aux horaires bistro.<br/>
+                Sont proposées planches de charcuterie, croque-monsieurs et autres petites choses à picorer.
+            </p>
+        </div>
+    </section>
+
+    <section class="section__image menu"></section>
+
+    <section class="section__content menu" id="menu">
+        <div class="container">
+            <h2 class="section__content-title">Menu du 3 avril au 8 avril</h2>
+            <table class="menu-table">
+                <tr>
+                    <th></th>
+                    <th>Plat du jour</th>
+                    <th>Formule plat du jour <span>Entrée OU dessert + plat du jour</span></th>
+                    <th>Formule complète <span>Entrée + dessert + plat du jour</span></th>
+                </tr>
+                <tr>
+                    <td class="menu-table__day">
+                        Lundi midi
+                        <span><em>Entrée</em> - Jambon italien crudités</span>
+                        <span><em>Plat</em> - Lasagnes de boeuf</span>
+                    </td>
+                    <td>9.50€</td>
+                    <td>11.50€</td>
+                    <td>13.50€</td>
+                </tr>
+                <tr>
+                    <td class="menu-table__day">
+                        Mardi midi
+                        <span><em>Entrée</em> - Chou blanc roquefort et noix</span>
+                        <span><em>Plat</em> - Rôti de porc de montagne</span>
+                    </td>
+                    <td>9.50€</td>
+                    <td>11.50€</td>
+                    <td>13.50€</td>
+                </tr>
+                <tr>
+                    <td class="menu-table__day">
+                        Mercredi midi
+                        <span><em>Entrée</em> - Bouillon de poule</span>
+                        <span><em>Plat</em> - Blanquette de veau, riz</span>
+                    </td>
+                    <td>9.50€</td>
+                    <td>11.50€</td>
+                    <td>13.50€</td>
+                </tr>
+                <tr>
+                    <td class="menu-table__day">
+                        Vendredi midi
+                        <span><em>Entrée</em> - Salade crevettes avocat</span>
+                        <span><em>Plat</em> - Rôti de filet, julienne chou chinois sauce soja</span>
+                    </td>
+                    <td>9.50€</td>
+                    <td>11.50€</td>
+                    <td>13.50€</td>
+                </tr>
+                <tr>
+                    <td class="menu-table__day">
+                        Vendredi soir
+                        <span>Le choix sur notre ardoise</span>
+                    </td>
+                    <td>À la carte</td>
+                    <td>À la carte</td>
+                    <td>À la carte</td>
+                </tr>
+                <tr>
+                    <td class="menu-table__day">
+                        Samedi soir
+                        <span>Le choix de notre ardoise</span>
+                    </td>
+                    <td>À la carte</td>
+                    <td>À la carte</td>
+                    <td>À la carte</td>
+                </tr>
+                <tr>
+                    <td class="menu-table__day">
+                        Dimanche midi
+                        <span><em>Entrée</em> - Muffin de patate douce basilic mâche</span>
+                        <span><em>Plat</em> - Saint-Jacques plancha sur son lit de risotto</span>
+                    </td>
+                    <td>16.50€</td>
+                    <td>18.50€</td>
+                    <td>20.50€</td>
+                </tr>
+            </table>
+            <p>Les desserts seront proposés selon nos humeurs.</p>
+        </div>
+    </section>
+
+    <section class="section__image events"></section>
+
+    <section class="section__content events" id="evenements">
+        <div class="container">
+            <h2 class="section__content-title">Prochains événements</h2>
+
+        </div>
+    </section>
+</main>
 
 <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
 <script src="/js/min/app.min.js"></script>
