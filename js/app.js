@@ -26,5 +26,7 @@ jQuery(function($) {
                 $('#return-to-top').stop().fadeIn();
             }
         });
+
+        $('#calendar').clndr({});
     });
 });
