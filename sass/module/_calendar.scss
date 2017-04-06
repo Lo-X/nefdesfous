@@ -1,0 +1,127 @@
+#calendar {
+  width: 100%;
+  font-weight: 700;
+
+  .clndr-controls {
+    padding: 14px;
+    background-color: lighten(#000, 20%);
+    color: #fff;
+    text-align: center;
+
+    .clndr-previous-button {
+      float: left;
+      text-align: left;
+    }
+
+    .clndr-next-button {
+      float: right;
+      text-align: right;
+    }
+
+    .clndr-previous-button, .clndr-next-button {
+      width: 30px;
+      cursor: pointer;
+      -webkit-user-select: none;
+      /* Chrome/Safari */
+
+      -moz-user-select: none;
+      /* Firefox */
+
+      -ms-user-select: none;
+      /* IE10+ */
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+
+
+  .clndr-grid {
+    float: left;
+    width: 65%;
+    border-right: 2px solid #fff;
+
+    .days-of-the-week {
+      width: 100%;
+      background-color: $logo-green-color;
+
+      .header-day {
+        float: left;
+        width: 14.2857%;
+        padding: 14px;
+        text-align: center;
+        color: white;
+      }
+    }
+
+    .days {
+      width: 100%;
+
+      .day, .empty {
+        float: left;
+        width: 14.2857%;
+        height: 66px;
+        padding: 24px 0;
+        text-align: center;
+        color: lighten($default-text-color, 30%);
+        background-color: #ebebeb;
+        border-bottom: 2px solid #fff;
+      }
+
+      .day.event .day-number, .empty.event .day-number {
+        padding-bottom: 4px;
+        border-bottom: 2px solid $primary-color;
+        cursor: pointer;
+      }
+
+      .day.adjacent-month .day-number, .empty.adjacent-month .day-number {
+        opacity: 0.3;
+      }
+
+      .today {
+        background-color: white;
+        background-image: none;
+      }
+    }
+  }
+
+
+  .event-listing {
+    float: left;
+    width: 35%;
+
+    .event-listing-title {
+      padding: 14px;
+      background-color: $primary-color;
+      text-align: center;
+      color: white;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .event-item {
+      padding: 14px;
+      color: $default-text-color;
+    }
+
+    .event-item-name {
+      font-weight: bold;
+    }
+
+    .event-item-date {
+      color: $primary-color;
+
+      &:after {
+        content: " - ";
+        color: $default-text-color;
+      }
+    }
+
+    .event-item-description {
+      font-weight: normal;
+      font-size: 0.8rem;
+      line-height: 1.2rem;
+    }
+  }
+}

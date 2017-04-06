@@ -1747,3 +1747,25 @@ section.schedule p { text-align: center; }
 .menu-table td { padding: 5px 0; text-align: center; vertical-align: middle; }
 .menu-table__day { font-weight: bold; padding-right: 10px !important; padding-bottom: 10px !important; text-align: left !important; }
 .menu-table__day span { font-weight: normal; display: block; font-size: 1rem; }
+
+#calendar { width: 100%; font-weight: 700; }
+#calendar .clndr-controls { padding: 14px; background-color: #333333; color: #fff; text-align: center; }
+#calendar .clndr-controls .clndr-previous-button { float: left; text-align: left; }
+#calendar .clndr-controls .clndr-next-button { float: right; text-align: right; }
+#calendar .clndr-controls .clndr-previous-button, #calendar .clndr-controls .clndr-next-button { width: 30px; cursor: pointer; -webkit-user-select: none; /* Chrome/Safari */ -moz-user-select: none; /* Firefox */ -ms-user-select: none; /* IE10+ */ }
+#calendar .clndr-controls .clndr-previous-button:hover, #calendar .clndr-controls .clndr-next-button:hover { opacity: 0.5; }
+#calendar .clndr-grid { float: left; width: 65%; border-right: 2px solid #fff; }
+#calendar .clndr-grid .days-of-the-week { width: 100%; background-color: #62A297; }
+#calendar .clndr-grid .days-of-the-week .header-day { float: left; width: 14.2857%; padding: 14px; text-align: center; color: white; }
+#calendar .clndr-grid .days { width: 100%; }
+#calendar .clndr-grid .days .day, #calendar .clndr-grid .days .empty { float: left; width: 14.2857%; height: 66px; padding: 24px 0; text-align: center; color: #4d4d4d; background-color: #ebebeb; border-bottom: 2px solid #fff; }
+#calendar .clndr-grid .days .day.event .day-number, #calendar .clndr-grid .days .empty.event .day-number { padding-bottom: 4px; border-bottom: 2px solid #DB5A31; cursor: pointer; }
+#calendar .clndr-grid .days .day.adjacent-month .day-number, #calendar .clndr-grid .days .empty.adjacent-month .day-number { opacity: 0.3; }
+#calendar .clndr-grid .days .today { background-color: white; background-image: none; }
+#calendar .event-listing { float: left; width: 35%; }
+#calendar .event-listing .event-listing-title { padding: 14px; background-color: #DB5A31; text-align: center; color: white; letter-spacing: 1px; text-transform: uppercase; }
+#calendar .event-listing .event-item { padding: 14px; color: #000; }
+#calendar .event-listing .event-item-name { font-weight: bold; }
+#calendar .event-listing .event-item-date { color: #DB5A31; }
+#calendar .event-listing .event-item-date:after { content: " - "; color: #000; }
+#calendar .event-listing .event-item-description { font-weight: normal; font-size: 0.8rem; line-height: 1.2rem; }
