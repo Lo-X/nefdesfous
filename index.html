@@ -248,7 +248,12 @@
         <% _.each(eventsThisMonth, function(event) { %>
         <div class="event-item">
             <div class="event-item-name"><span class="event-item-date"><%= event.date_fr %></span> <%= event.title %></div>
-            <div class="event-item-description"><%= event.description %></div>
+            <div class="event-item-description">
+                <%= event.description %>
+                <% if(typeof(event.facebook) != 'undefined' && event.facebook.length > 0) { %>
+                    <div class="event-item-link"><a href="<%= event.facebook %>" target="_blank">Lien facebook <i class="fa fa-fw fa-external-link"></i></a></div>
+                <% }; %>
+            </div>
         </div>
         <% }); %>
     </div>

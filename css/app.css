@@ -1759,7 +1759,7 @@ section.schedule p { text-align: center; }
 #calendar .clndr-grid .days-of-the-week .header-day { float: left; width: 14.2857%; padding: 14px; text-align: center; color: white; }
 #calendar .clndr-grid .days { width: 100%; }
 #calendar .clndr-grid .days .day, #calendar .clndr-grid .days .empty { float: left; width: 14.2857%; height: 66px; padding: 24px 0; text-align: center; color: #4d4d4d; background-color: #ebebeb; border-bottom: 2px solid #fff; }
-#calendar .clndr-grid .days .day.event .day-number, #calendar .clndr-grid .days .empty.event .day-number { padding-bottom: 4px; border-bottom: 2px solid #DB5A31; cursor: pointer; }
+#calendar .clndr-grid .days .day.event .day-number, #calendar .clndr-grid .days .empty.event .day-number { padding-bottom: 4px; border-bottom: 2px solid #DB5A31; }
 #calendar .clndr-grid .days .day.adjacent-month .day-number, #calendar .clndr-grid .days .empty.adjacent-month .day-number { opacity: 0.3; }
 #calendar .clndr-grid .days .today { background-color: white; background-image: none; }
 #calendar .event-listing { float: left; width: 35%; }
